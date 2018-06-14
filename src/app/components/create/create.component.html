@@ -1,0 +1,8 @@
+<form (ngSubmit)="addUser()" [formGroup]="form">
+
+  <input type="text" formControlName="nickname">
+  <input type="text" formControlName="age">
+
+  <button class="btn btn-secondary" type="submit" [disabled]="form.invalid">Add</button>
+  <button class="btn btn-secondary" type="button" (click)="loadUsers()">Load...</button>
+</form>
